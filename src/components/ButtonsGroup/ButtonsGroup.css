@@ -1,0 +1,50 @@
+.bottonsGroup {
+  display: flex;
+  flex-direction: row;
+}
+.bottonsGroupFirstButton {
+  color: #fff;
+  background-color: rgba(50, 53, 55, 1);
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  gap: 10px;
+  height: 56px;
+  padding: 16px 32px 16px 32px;
+  border: none;
+  border-radius: 10px 0px 0px 10px;
+}
+.bottonsGroupFirstButton:hover {
+  background-color: rgb(63, 64, 65);
+}
+.bottonsGroupFirstButton:hover * {
+  fill: rgb(255, 255, 255);
+}
+
+.bottonsGroupFirstButton:disabled {
+  color: #8d8e97;
+  background-color: #e8e8e8;
+}
+.bottonsGroupSecondButton {
+  color: #fff;
+  background-color: rgba(50, 53, 55, 1);
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  gap: 10px;
+  height: 56px;
+  padding: 16px 32px 16px 32px;
+  border: none;
+  border-left: solid 1px black;
+  border-radius: 0px 10px 10px 0px;
+}
+.bottonsGroupSecondButton:hover {
+  background-color: rgb(63, 64, 65);
+}
+.bottonsGroupSecondButton:disabled {
+  color: #8d8e97;
+  background-color: #e8e8e8;
+}
+.bottonsGroupSecondButton:hover * {
+  fill: rgb(255, 255, 255);
+}

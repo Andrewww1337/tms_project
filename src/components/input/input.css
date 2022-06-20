@@ -1,0 +1,66 @@
+.password,
+.email,
+.text {
+  margin: 10px 0 10px 0;
+
+  width: 100%;
+  background-color: rgba(50, 53, 55, 1);
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  padding: 20px;
+  color: white;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #313037;
+}
+
+.text:focus {
+  outline: 2px solid rgba(123, 97, 255, 1);
+}
+.text:focus::placeholder {
+  color: white;
+}
+.password:focus {
+  outline: 2px solid rgba(123, 97, 255, 1);
+}
+.password:focus::placeholder {
+  color: white;
+}
+
+.email:focus {
+  outline: 2px solid rgba(123, 97, 255, 1);
+}
+.email:focus::placeholder {
+  color: white;
+}
+.password:disabled {
+  background-color: #e8e8e8;
+  color: #8d8e97;
+}
+.email:disabled {
+  background-color: #e8e8e8;
+  color: #8d8e97;
+}
+.text:disabled {
+  background-color: #e8e8e8;
+  color: #8d8e97;
+}
+.errorP {
+  color: #fd3419;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.true {
+  border: 2px solid #fd3419;
+}

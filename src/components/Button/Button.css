@@ -1,0 +1,38 @@
+.secondary {
+  color: #fff;
+  background-color: rgba(50, 53, 55, 1);
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  gap: 10px;
+  height: 56px;
+  padding: 16px 32px 16px 32px;
+  border: none;
+  border-radius: 7px;
+}
+.secondary:hover {
+  color: #c1becb;
+}
+.secondary:disabled {
+  color: #8d8e97;
+  background-color: #e8e8e8;
+}
+.primary {
+  color: #fff;
+  background-color: rgba(123, 97, 255, 1);
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  gap: 10px;
+  height: 56px;
+  padding: 16px 32px 16px 32px;
+  border: none;
+  border-radius: 7px;
+}
+.primary:hover {
+  background-color: rgba(145, 124, 255, 1);
+}
+.primary:disabled {
+  color: #8d8e97;
+  background-color: #e8e8e8;
+}
