@@ -1,0 +1,60 @@
+.userIcon {
+  height: 6vh;
+  width: 5vw;
+  background-color: rgba(123, 97, 255, 1);
+  border-radius: 7px;
+  color: aliceblue;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.userInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  color: aliceblue;
+}
+.userButton {
+  background: url("../Icon/ArrowRight.svg") no-repeat;
+  height: 3vh;
+  border: none;
+  margin-top: 2vh;
+  margin-left: 90px;
+}
+.noUserButton {
+  background: url("../Icon/ArrowDown.svg") no-repeat;
+  height: 3vh;
+  border: none;
+  margin-top: 2vh;
+}
+.userCard {
+  display: flex;
+  flex-direction: column;
+}
+.userSettings {
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+}
+.buttonProfil {
+  border: none;
+  background-color: rgba(36, 36, 38, 1);
+  color: aliceblue;
+  padding: 10px;
+}
+.buttonProfil:first-child {
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: 1px solid rgba(50, 53, 55, 1);
+}
+.buttonProfil:last-child {
+  border-radius: 0px 0px 5px 5px;
+}

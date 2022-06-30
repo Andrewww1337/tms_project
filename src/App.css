@@ -77,6 +77,7 @@ select {
 }
 .App {
   text-align: center;
+  background-color: rgb(111, 102, 102);
 }
 
 .App-logo {
@@ -112,4 +113,8 @@ select {
   to {
     transform: rotate(360deg);
   }
+}
+
+.uuus {
+  width: 220px;
 }

@@ -1,0 +1,30 @@
+.postCard {
+  display: flex;
+  flex-direction: column;
+  width: 12vw;
+  position: relative;
+}
+.cardImage {
+  border-radius: 20px;
+}
+.filmName {
+  text-align: left;
+  color: aliceblue;
+}
+.filmName:hover {
+  color: rgba(123, 97, 255, 1);
+  cursor: pointer;
+}
+.filmGenre {
+  color: rgba(175, 178, 182, 1);
+  text-align: left;
+}
+.rating {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  color: white;
+  background-color: rgba(0, 163, 64, 1);
+  padding: 3px;
+  border-radius: 5px;
+}

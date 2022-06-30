@@ -1,0 +1,19 @@
+.select {
+  margin: 10px 0 10px 0;
+  width: 100%;
+  background-color: rgba(50, 53, 55, 1);
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  padding: 20px;
+  color: white;
+}
+
+.select:focus {
+  outline: 2px solid rgba(123, 97, 255, 1);
+}
+
+.select:disabled {
+  background-color: #e8e8e8;
+  color: #8d8e97;
+}

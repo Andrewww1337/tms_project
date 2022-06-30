@@ -44,9 +44,11 @@ export const RegistrationForm = () => {
     }
   };
   return (
-    <div className="RegistrationForm">
-      <form>
+    <div className="componentRegistrationForm">
+      <h2 className="title">Sign Up</h2>
+      <form className="RegistrationForm">
         <Input
+          title="Name"
           type="text"
           placeholder="Name"
           error={false}
@@ -55,6 +57,7 @@ export const RegistrationForm = () => {
           onChange={onNameChange}
         />
         <Input
+          title="Email"
           type="email"
           placeholder="Email"
           error={false}
@@ -63,6 +66,7 @@ export const RegistrationForm = () => {
           onChange={onEmailChange}
         />
         <Input
+          title="Password"
           type="password"
           placeholder="Password"
           error={errorPassword}
@@ -71,6 +75,7 @@ export const RegistrationForm = () => {
           onChange={onPasswordChange}
         />
         <Input
+          title="Confirm password"
           type="password"
           placeholder="Confirm Password"
           error={errorPassword}
@@ -78,15 +83,17 @@ export const RegistrationForm = () => {
           value={confirmedPassword}
           onChange={onConfirmedPasswordChange}
         />
-      </form>
-      <div className="bottonForm">
+
         <Button
           text="Sign Up"
-          className="primary"
+          className={`primary bottonRegistrationForm`}
           onClick={submitForm}
           disabled={false}
         />
-      </div>
+        <p className="signatureUnderTheButton">
+          Already have an account? Sign In
+        </p>
+      </form>
     </div>
   );
 };
