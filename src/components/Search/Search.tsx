@@ -1,8 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
-import { text } from "stream/consumers";
 import "./search.css";
-import { ReactComponent as IconParamsSearch } from "../Icon/SearchParamsIcon.svg";
 import FilterButton from "../Button/FilterButton";
+
 type InputProps = {
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   disabled?: boolean;

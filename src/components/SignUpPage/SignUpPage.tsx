@@ -1,4 +1,3 @@
-import { SignInForm } from "../SignInForm/SignInForm";
 import "./signUpPage.css";
 import { ReactComponent as Pixema } from "../Icon/pixema.svg";
 import { Link } from "react-router-dom";

@@ -1,13 +1,9 @@
-import { click } from "@testing-library/user-event/dist/click";
 import React, { useEffect, useRef, useState, ReactElement } from "react";
-import { Button } from "../Button";
 import { ReactComponent as Vector } from "../Icon/Arrow.svg";
-
 import "./arrow.css";
 
 type ArrowProps = {
   vector: string;
-
   onClick: (event: React.MouseEvent<HTMLElement>) => void;
 };
 

@@ -1,6 +1,3 @@
-import React, { useState } from "react";
-import { Search } from "../Search";
-import { User } from "../User";
 import { ReactComponent as Home } from "../Icon/Home.svg";
 import { ReactComponent as Fire } from "../Icon/Fire.svg";
 import { ReactComponent as Bookmark } from "../Icon/Bookmark.svg";

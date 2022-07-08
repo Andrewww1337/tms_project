@@ -1,8 +1,4 @@
-import { click } from "@testing-library/user-event/dist/click";
 import React, { useEffect, useRef, useState } from "react";
-import { Button } from "../Button";
-import { signProf } from "../../sagas/profile";
-
 import "./user.css";
 import { Link } from "react-router-dom";
 import { useAppSelector } from "../../redux/hooks";
@@ -12,8 +8,6 @@ const userLastName = "Kiri";
 
 export const User = () => {
   const userName = useAppSelector((state) => state.posts.name);
-
-  console.log(userName);
 
   const [toggle, setToggle] = useState(false);
   return (

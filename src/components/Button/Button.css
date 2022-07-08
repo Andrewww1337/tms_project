@@ -1,7 +1,7 @@
 .secondary {
   width: 100%;
-  color: #fff;
   background-color: rgba(50, 53, 55, 1);
+  color: #fff;
   display: flex;
   align-items: center;
   font-size: 18px;

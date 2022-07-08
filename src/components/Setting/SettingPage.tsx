@@ -1,5 +1,4 @@
 import "./settingPage.css";
-
 import React, {
   useCallback,
   useContext,
@@ -7,8 +6,7 @@ import React, {
   useMemo,
   useState,
 } from "react";
-import { useParams } from "react-router-dom";
-import { useAppDispatch, useAppSelector } from "../../redux/hooks";
+
 import { ToggleButton } from "../Switch";
 import { ThemContext } from "../../App";
 

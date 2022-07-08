@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import logo from "./logo.svg";
 import "./registrationForm.css";
 import { Button } from "../Button";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";

@@ -3,7 +3,6 @@ import { getPost, delProps } from "../../features/posts";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import { PostCard } from "../PostCard";
 import { delPost } from "../../features/posts";
-
 import "./postList.css";
 
 export const PostList = () => {
@@ -12,6 +11,7 @@ export const PostList = () => {
 
   const postSearch = useAppSelector((state) => state.posts.postSearch);
   const numPage = useAppSelector((state) => state.posts.num);
+
   const clearPage = () => {
     dispatch(delProps(String(Number(numPage) + 1)));
   };

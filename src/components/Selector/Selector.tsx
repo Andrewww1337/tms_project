@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./selector.css";
+
 type SelectProps = {
   onChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
   disabled?: boolean;

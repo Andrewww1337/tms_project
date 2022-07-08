@@ -11,6 +11,7 @@ import React, {
 import { Input } from "../input";
 import "./resetPasswordConfirm.css";
 import { useNavigate } from "react-router-dom";
+
 export const ResetPasswordConfirm = () => {
   let navigate = useNavigate();
 

@@ -1,5 +1,4 @@
 import React from "react";
-
 import { ReactComponent as IconBookmark } from "../Icon/Bookmark.svg";
 import { ReactComponent as IconSettings } from "../Icon/Settings.svg";
 import "./buttonsGroup.css";

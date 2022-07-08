@@ -1,5 +1,4 @@
 import React from "react";
-
 import "./tabs.css";
 
 type ButtonProps = {
@@ -11,6 +10,7 @@ type ButtonProps = {
   extraClassFirstButton?: string;
   extraClassSecondButton?: string;
 };
+
 export const Tabs = ({
   onClickFirstButton,
   onClickSecondButton,

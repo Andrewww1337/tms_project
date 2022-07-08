@@ -1,8 +1,6 @@
-import { click } from "@testing-library/user-event/dist/click";
 import React, { useEffect, useRef, useState } from "react";
-import { Button } from "../Button";
-
 import "./multiSelect.css";
+
 type SelectProps = {
   options: Options[];
   placeholder?: string;
