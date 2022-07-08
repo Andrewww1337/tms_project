@@ -1,0 +1,11 @@
+.postList {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  box-sizing: content-box;
+}
+.card {
+  flex-basis: 20%;
+  margin-top: 20px;
+}

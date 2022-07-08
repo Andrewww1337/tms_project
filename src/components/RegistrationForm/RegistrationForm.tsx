@@ -1,16 +1,20 @@
 import React, { useState } from "react";
 import logo from "./logo.svg";
-import "./RegistrationForm.css";
+import "./registrationForm.css";
 import { Button } from "../Button";
-
+import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import { Input } from "../input";
+import { signUp } from "../../features/auth";
+import { Link, useNavigate } from "react-router-dom";
 
 export const RegistrationForm = () => {
+  const dispatch = useAppDispatch();
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmedPassword, setConfirmedPassword] = useState("");
   let [errorPassword, setErrorPassword] = useState(false);
+  let navigate = useNavigate();
   const onNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setUsername(event.target.value);
   };
@@ -38,7 +42,8 @@ export const RegistrationForm = () => {
         email,
         password,
       };
-      console.log(formData); // dispatch(signUp(formData))
+      dispatch(signUp(formData));
+      navigate("/verify");
     } else {
       setErrorPassword((current) => !current);
     }
@@ -91,7 +96,7 @@ export const RegistrationForm = () => {
           disabled={false}
         />
         <p className="signatureUnderTheButton">
-          Already have an account? Sign In
+          Already have an account?<Link to="/signIn"> Sign In</Link>
         </p>
       </form>
     </div>

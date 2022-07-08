@@ -84,6 +84,10 @@
 .optionsChecker {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+
+  box-sizing: content-box;
 }
 .option {
   display: flex;
@@ -93,6 +97,8 @@
   border-radius: 5px;
   padding: 2px 10px 5px 5px;
   color: aliceblue;
+  flex-basis: 20%;
+  margin-top: 5px;
 }
 . {
   width: 1vw;

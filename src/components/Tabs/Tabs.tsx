@@ -1,13 +1,15 @@
 import React from "react";
 
-import "./Tabs.css";
+import "./tabs.css";
 
 type ButtonProps = {
-  onClickFirstButton: () => void;
-  onClickSecondButton: () => void;
+  onClickFirstButton: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  onClickSecondButton: (event: React.MouseEvent<HTMLButtonElement>) => void;
   disabled: boolean;
   textFifstButton: string;
   textSecondButton: string;
+  extraClassFirstButton?: string;
+  extraClassSecondButton?: string;
 };
 export const Tabs = ({
   onClickFirstButton,
@@ -15,13 +17,15 @@ export const Tabs = ({
   disabled,
   textFifstButton,
   textSecondButton,
+  extraClassFirstButton,
+  extraClassSecondButton,
 }: ButtonProps) => {
   return (
     <div className="tabs">
       <button
         type="button"
         onClick={onClickFirstButton}
-        className="tabFirst"
+        className={`tabFirst ${extraClassFirstButton}`}
         disabled={disabled}
       >
         {textFifstButton}
@@ -29,7 +33,7 @@ export const Tabs = ({
       <button
         type="button"
         onClick={onClickSecondButton}
-        className="tabSecond"
+        className={`tabSecond ${extraClassSecondButton}`}
         disabled={disabled}
       >
         {textSecondButton}

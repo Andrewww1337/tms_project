@@ -1,21 +1,23 @@
 import { click } from "@testing-library/user-event/dist/click";
 import React, { useEffect, useRef, useState, ReactElement } from "react";
 import { Button } from "../Button";
+import { Link } from "react-router-dom";
 
-import "./Links.css";
+import "./links.css";
 
 type LinkProps = {
   text: string;
   image: ReactElement;
+  to: string;
 };
 
-export const Link = ({ text, image }: LinkProps) => {
+export const Linking = ({ text, image, to }: LinkProps) => {
   return (
     <div className="linkComponent">
       {image}
-      <a className="link" href="url">
+      <Link className="link" to={to}>
         {text}
-      </a>
+      </Link>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState, ReactElement } from "react";
 import { Button } from "../Button";
 import { ReactComponent as Vector } from "../Icon/Arrow.svg";
 
-import "./Arrow.css";
+import "./arrow.css";
 
 type ArrowProps = {
   vector: string;

@@ -1,4 +1,5 @@
 .secondary {
+  width: 100%;
   color: #fff;
   background-color: rgba(50, 53, 55, 1);
   display: flex;
@@ -18,6 +19,7 @@
   background-color: #e8e8e8;
 }
 .primary {
+  width: 100%;
   color: #fff;
   background-color: rgba(123, 97, 255, 1);
   display: flex;

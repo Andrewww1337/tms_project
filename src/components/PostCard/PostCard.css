@@ -1,11 +1,12 @@
 .postCard {
   display: flex;
   flex-direction: column;
-  width: 12vw;
+  width: 13vw;
   position: relative;
 }
 .cardImage {
   border-radius: 20px;
+  height: 35vh;
 }
 .filmName {
   text-align: left;

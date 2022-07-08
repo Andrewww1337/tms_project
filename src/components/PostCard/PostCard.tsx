@@ -1,4 +1,4 @@
-import "./PostCard.css";
+import "./postCard.css";
 import React, {
   useCallback,
   useContext,
@@ -6,6 +6,7 @@ import React, {
   useMemo,
   useState,
 } from "react";
+import { Link } from "react-router-dom";
 
 type PostCardProps = {
   title: string;
@@ -27,7 +28,9 @@ export const PostCard = ({
   return (
     <div className="postCard">
       <img src={poster} alt="no" className="cardImage" />
-      <span className="filmName">{title}</span>
+      <Link to={`/post/${imdbID}`}>
+        <span className="filmName">{title}</span>
+      </Link>
       <span className="filmGenre">{type}</span>
       <span className="rating">7.6</span>
     </div>

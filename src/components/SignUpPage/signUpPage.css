@@ -1,0 +1,20 @@
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../Icon/BDBP8.jpg");
+}
+.signUpPage {
+  position: relative;
+}
+.signUpPageForm {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, 20%);
+  width: 30%;
+}
+.signUpLogo {
+  position: fixed;
+  margin-left: 20px;
+  margin-top: 20px;
+}

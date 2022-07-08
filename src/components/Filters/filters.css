@@ -1,0 +1,74 @@
+.menu {
+  position: fixed;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100vw;
+  height: 100vh;
+  top: 0%;
+  right: 0%;
+  transform: translateX(100%);
+  transition: all 0.5s;
+  z-index: 1;
+}
+.menu.active {
+  transform: translateX(0);
+}
+.menu__content {
+  width: 25%;
+  height: 100%;
+  background-color: #242426;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s;
+}
+.menu_filters {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+}
+.activButton {
+  background-color: rgba(50, 53, 55, 1);
+}
+.filtersElement {
+  margin-top: 30px;
+}
+.filtersElementWidthTwoShild {
+  color: white;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+.oneFilterElement {
+  width: 45%;
+}
+
+.filtersCloser {
+  width: 1vw;
+  height: 2vh;
+  background-color: inherit;
+  border: none;
+  position: relative;
+}
+.filtersCloser:hover {
+  opacity: 1;
+}
+.filtersCloser:before,
+.filtersCloser:after {
+  position: absolute;
+  margin-left: 5px;
+  content: " ";
+  height: 1.5vh;
+  width: 2px;
+  background-color: rgb(255, 255, 255);
+}
+.filtersCloser:before {
+  transform: rotate(45deg);
+}
+.filtersCloser:after {
+  transform: rotate(-45deg);
+}

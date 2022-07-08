@@ -1,13 +1,18 @@
 import React, { useState } from "react";
 import logo from "./logo.svg";
-import "./SignInForm.css";
+import "./signInForm.css";
 import { Button } from "../Button";
+import { loadToken } from "../../features/auth/tokenSlice";
+import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 
 import { Input } from "../input";
+import { Link, useNavigate } from "react-router-dom";
 
 export const SignInForm = () => {
+  const dispatch = useAppDispatch();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  let navigate = useNavigate();
 
   const onEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(event.target.value);
@@ -24,7 +29,8 @@ export const SignInForm = () => {
       email,
       password,
     };
-    console.log(formData); // dispatch(signUp(formData))
+    dispatch(loadToken(formData));
+    navigate("/");
   };
 
   return (
@@ -49,6 +55,9 @@ export const SignInForm = () => {
           value={password}
           onChange={onPasswordChange}
         />
+        <p className="signatureUnderTheButton">
+          <Link to="/resetPassword">Forgot assword? </Link>
+        </p>
 
         <Button
           text="Sign In"
@@ -56,8 +65,9 @@ export const SignInForm = () => {
           onClick={submitForm}
           disabled={false}
         />
+
         <p className="signatureUnderTheButton">
-          Don’t have an account? Sign Up
+          Don’t have an account? <Link to="/signUp">Sign Up</Link>
         </p>
       </form>
     </div>

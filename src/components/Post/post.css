@@ -1,0 +1,59 @@
+.post {
+  display: flex;
+  flex-direction: row;
+  color: aliceblue;
+  text-align: left;
+  width: 100%;
+}
+.posts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contentPost {
+  width: 17%;
+}
+.postInfo {
+  margin-left: 45px;
+  width: 83%;
+}
+.postImage {
+  height: 35vh;
+  border-radius: 20px;
+  margin-bottom: 35px;
+}
+
+.titlePost {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.plotPost {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 80%;
+}
+.aboutFilm {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+.aboutFilm * {
+  margin-top: 15px;
+}
+.aboutFilmFromServer {
+  margin-left: 30px;
+}
+.recomendationPosts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.arrowRecomendationPosts {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.arrowRecomendationPosts * {
+  margin-left: 10px;
+}

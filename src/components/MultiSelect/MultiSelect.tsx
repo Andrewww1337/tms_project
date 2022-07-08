@@ -2,7 +2,7 @@ import { click } from "@testing-library/user-event/dist/click";
 import React, { useEffect, useRef, useState } from "react";
 import { Button } from "../Button";
 
-import "./MultiSelect.css";
+import "./multiSelect.css";
 type SelectProps = {
   options: Options[];
   placeholder?: string;
@@ -29,7 +29,7 @@ export const MultiSelect = ({
     setValue(event.target.value);
   };
 
-  const createChecrBox = (event: React.MouseEvent<HTMLElement>) => {
+  const createCheckBox = (event: React.MouseEvent<HTMLElement>) => {
     setVisibleElement(true);
   };
 
@@ -52,6 +52,7 @@ export const MultiSelect = ({
   document.onclick = function (e: MouseEvent) {
     if (e.target !== MultiSelectEl.current) {
       setVisibleElement(false);
+      console.log("ttt");
     }
   };
 
@@ -60,7 +61,7 @@ export const MultiSelect = ({
       <p>{title}</p>
       <div onClick={stopPropagation}>
         <div
-          onClick={createChecrBox}
+          onClick={createCheckBox}
           className={visibleElement ? "selectOnVisible" : "fakeInputCheckBox"}
         >
           <div className={param.length > 0 ? "selectOnVisible" : ""}>

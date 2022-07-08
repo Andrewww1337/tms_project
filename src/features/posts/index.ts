@@ -1,0 +1,15 @@
+export {
+  type OnePost,
+  type Post,
+  getName,
+  getOnePost,
+  getOnePostSuccess,
+  getProps,
+  delProps,
+  delPost,
+  getPost,
+  getPostFailure,
+  getPostSuccess,
+  default as postsReducer,
+  postsSlice,
+} from "./postsSlice";

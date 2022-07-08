@@ -1,0 +1,15 @@
+.navBar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 45px;
+  margin-bottom: 30px;
+}
+.searhCompanentInNavBar {
+  width: 81%;
+}
+.userComponentInNavBar {
+  width: 13%;
+  margin-right: 3%;
+}
