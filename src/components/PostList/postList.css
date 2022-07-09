@@ -2,10 +2,25 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: space-between;
   box-sizing: content-box;
+  align-items: center;
 }
 .card {
   flex-basis: 20%;
   margin-top: 20px;
+}
+.buttonSpiner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.buttonShowMore {
+  background-color: rgba(50, 53, 55, 1);
+  border: none;
+  border-radius: 20px;
+  color: inherit;
+  padding: 10px;
+  margin-top: 30px;
+  cursor: pointer;
+  margin-right: 70px;
 }

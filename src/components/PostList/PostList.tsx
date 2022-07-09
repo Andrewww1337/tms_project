@@ -35,26 +35,31 @@ export const PostList = () => {
   };
   return (
     <div className="postList">
-      {post?.map(({ Title, Year, imdbID, Type, Poster }: PostProps) => (
-        <div className="card">
-          <PostCard
-            title={Title}
-            year={Year}
-            imdbID={imdbID}
-            type={Type}
-            poster={Poster}
-            rating="7.6"
-          />
-        </div>
-      ))}
-      <button
-        onClick={(e) => {
-          clearPage();
-          getNewPost();
-        }}
-      >
-        pooost
-      </button>
+      <>
+        {post?.map(({ Title, Year, imdbID, Type, Poster }: PostProps) => (
+          <div className="card">
+            <PostCard
+              title={Title}
+              year={Year}
+              imdbID={imdbID}
+              type={Type}
+              poster={Poster}
+              rating="7.6"
+            />
+          </div>
+        ))}
+      </>
+      <div className="buttonSpiner">
+        <button
+          className="buttonShowMore"
+          onClick={(e) => {
+            clearPage();
+            getNewPost();
+          }}
+        >
+          Show more
+        </button>
+      </div>
     </div>
   );
 };
