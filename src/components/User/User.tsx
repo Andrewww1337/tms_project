@@ -1,14 +1,14 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import "./user.css";
 import { Link } from "react-router-dom";
 import { useAppSelector } from "../../redux/hooks";
+import { ThemContext } from "../../App";
 
-//const userName = "Andrew";
 const userLastName = "Kiri";
 
 export const User = () => {
   const userName = useAppSelector((state) => state.posts.name);
-
+  const { theme, setTheme } = useContext(ThemContext);
   const [toggle, setToggle] = useState(false);
   return (
     <div className="userCard">
@@ -47,8 +47,12 @@ export const User = () => {
       </div>
       {toggle && (
         <div className="userSettings">
-          <button className="buttonProfil">Edit profil</button>
-          <button className="buttonProfil">Log Out</button>
+          <button className={`buttonProfil buttonProfil--${theme}`}>
+            Edit profil
+          </button>
+          <button className={`buttonProfil buttonProfil--${theme}`}>
+            Log Out
+          </button>
         </div>
       )}
     </div>

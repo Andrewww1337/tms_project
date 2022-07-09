@@ -48,22 +48,24 @@ function App() {
 
   return (
     <ThemContext.Provider value={{ theme, setTheme }}>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route path="post/:id" element={<Post />} />
-          <Route path="settings" element={<SettingPage />} />
-          <Route index element={<PostList />} />
-        </Route>
-        <Route path="/signIn" element={<SignInPage />} />
-        <Route path="/signUp" element={<SignUpPage />} />
-        <Route path="/verify" element={<VerifyPage />} />
-        <Route path="/resetPassword" element={<ResetPasswordPagee />} />
+      <div className={theme}>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route path="post/:id" element={<Post />} />
+            <Route path="settings" element={<SettingPage />} />
+            <Route index element={<PostList />} />
+          </Route>
+          <Route path="/signIn" element={<SignInPage />} />
+          <Route path="/signUp" element={<SignUpPage />} />
+          <Route path="/verify" element={<VerifyPage />} />
+          <Route path="/resetPassword" element={<ResetPasswordPagee />} />
 
-        <Route
-          path="/resetPasswordConfirm"
-          element={<ResetPasswordConfirmPage />}
-        />
-      </Routes>
+          <Route
+            path="/resetPasswordConfirm"
+            element={<ResetPasswordConfirmPage />}
+          />
+        </Routes>
+      </div>
     </ThemContext.Provider>
   );
 }

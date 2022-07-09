@@ -23,7 +23,6 @@
   align-items: center;
   justify-content: center;
   margin-left: 5px;
-  color: aliceblue;
 }
 .userButton {
   background: url("../Icon/ArrowRight.svg") no-repeat;
@@ -48,9 +47,15 @@
 }
 .buttonProfil {
   border: none;
+  padding: 10px;
+}
+.buttonProfil--dark {
   background-color: rgba(36, 36, 38, 1);
   color: aliceblue;
-  padding: 10px;
+}
+.buttonProfil--light {
+  color: black;
+  background-color: rgba(175, 178, 182, 1);
 }
 .buttonProfil:first-child {
   border-radius: 5px 5px 0px 0px;

@@ -7,7 +7,6 @@ import { MultiSelect } from "../MultiSelect";
 import { Tabs } from "../Tabs";
 import { delPost } from "../../features/posts";
 import { getPost, getProps, delProps } from "../../features/posts";
-
 import "./filters.css";
 import { Selector } from "../Selector";
 

@@ -1,6 +1,6 @@
 .link {
   text-decoration: none;
-  background-color: black;
+
   color: gray;
   margin-left: 20px;
   align-items: center;
@@ -14,7 +14,6 @@
   fill: gray;
 }
 .linkComponent {
-  background-color: black;
   display: flex;
   flex-direction: row;
   align-items: center;

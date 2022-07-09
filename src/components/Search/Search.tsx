@@ -1,5 +1,7 @@
 import "./search.css";
 import FilterButton from "../Button/FilterButton";
+import { useContext } from "react";
+import { ThemContext } from "../../App";
 
 type InputProps = {
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
@@ -16,13 +18,14 @@ export const Search = ({
   onClick,
   inputRef,
 }: InputProps) => {
+  const { theme, setTheme } = useContext(ThemContext);
   return (
     <div className="search">
       <input
         ref={inputRef}
         type={"text"}
         placeholder={"Search"}
-        className={"searchInput"}
+        className={`searchInput searchInput--${theme}`}
         disabled={disabled}
         onChange={onChange}
         onClick={onClick}

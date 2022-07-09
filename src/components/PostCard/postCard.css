@@ -9,12 +9,22 @@
   height: 35vh;
 }
 .filmName {
+  margin-top: 10px;
+  margin-bottom: 5px;
   text-align: left;
+}
+.filmName--dark {
   color: aliceblue;
+}
+.filmName--light {
+  color: rgb(0, 0, 0);
 }
 .filmName:hover {
   color: rgba(123, 97, 255, 1);
   cursor: pointer;
+}
+.link {
+  text-decoration: none;
 }
 .filmGenre {
   color: rgba(175, 178, 182, 1);

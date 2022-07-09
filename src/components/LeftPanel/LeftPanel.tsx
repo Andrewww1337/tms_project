@@ -13,12 +13,11 @@ export const LeftPanel = () => {
       <div className="logoLeftPanel">
         <Logo></Logo>
       </div>
-
       <div className="linksInLeftPanel">
         <Linking text="Home" to="/" image={<Home />}></Linking>
         <Linking text="Trends" to="/" image={<Fire />}></Linking>
         <Linking text="Favorites" to="/" image={<Bookmark />}></Linking>
-        <Linking text="Settings" to="/" image={<Gear />}></Linking>
+        <Linking text="Settings" to="settings" image={<Gear />}></Linking>
       </div>
     </div>
   );
