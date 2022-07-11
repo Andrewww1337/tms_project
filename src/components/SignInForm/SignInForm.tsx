@@ -11,7 +11,15 @@ export const SignInForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   let navigate = useNavigate();
+  const error = useAppSelector((state) => state.token.error);
+  const token = useAppSelector((state) => state.token.token);
 
+  if (token?.access) {
+    navigate("/");
+  }
+  if (error !== null) {
+    console.log(error);
+  }
   const onEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(event.target.value);
   };
@@ -28,7 +36,6 @@ export const SignInForm = () => {
       password,
     };
     dispatch(loadToken(formData));
-    navigate("/");
   };
 
   return (
@@ -67,6 +74,7 @@ export const SignInForm = () => {
         <p className="signatureUnderTheButton">
           Don’t have an account? <Link to="/signUp">Sign Up</Link>
         </p>
+        <p className={error !== null ? "ErrorTrue" : "ErrorFalse"}>Error</p>
       </form>
     </div>
   );

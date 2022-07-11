@@ -3,14 +3,18 @@ export type TokenSuccessPayload = {
   refresh: string;
   access: string;
 };
+
 export type TokenPayload = {
   email: string;
   password: string;
 };
+export type TokenError = {
+  detail: string;
+};
 type TokenState = {
   token: TokenSuccessPayload | null;
   isLoading: string;
-  error: string | null;
+  error: TokenError | null;
 };
 const initialState: TokenState = {
   token: null,
@@ -35,7 +39,7 @@ export const tokenSlice = createSlice({
         state.token = action.payload;
       }
     },
-    loadTokenFailure: (state, action: PayloadAction<string>) => {
+    loadTokenFailure: (state, action: PayloadAction<TokenError>) => {
       console.log("ggg");
       state.isLoading = "idle";
       state.error = action.payload;

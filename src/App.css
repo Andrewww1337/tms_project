@@ -80,10 +80,6 @@ select {
   display: flex;
   flex-direction: row;
 }
-body {
-  font-size: 0.75rem; /* Размер основного шрифта */
-}
-
 .dark {
   background-color: rgb(0, 0, 0);
   color: aliceblue;

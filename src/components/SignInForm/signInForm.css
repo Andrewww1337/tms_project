@@ -22,3 +22,9 @@
 .signatureUnderTheButton {
   color: rgb(176, 173, 173);
 }
+.ErrorTrue {
+  color: red;
+}
+.ErrorFalse {
+  display: none;
+}

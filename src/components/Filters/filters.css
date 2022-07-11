@@ -9,6 +9,7 @@
   transform: translateX(100%);
   transition: all 0.5s;
   z-index: 1;
+  font-size: 0.75rem;
 }
 .menu.active {
   transform: translateX(0);
