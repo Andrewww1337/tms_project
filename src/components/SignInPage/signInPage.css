@@ -5,14 +5,38 @@ body {
 .signInPage {
   position: relative;
 }
-.signInPageForm {
-  position: absolute;
-  left: 50%;
-  top: 50%;
+@media (max-width: 1920px) {
+  .signInPageForm {
+    position: absolute;
+    left: 50%;
+    top: 50%;
 
-  transform: translate(-50%, 50%);
-  width: 30%;
+    transform: translate(-50%, 50%);
+    width: 30%;
+  }
 }
+
+@media (max-width: 768px) {
+  .signInPageForm {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, 50%);
+    width: 70%;
+  }
+}
+@media (max-width: 320px) {
+  .signInPageForm {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, 50%);
+    width: 100%;
+  }
+}
+
 .signInLogo {
   position: fixed;
   margin-left: 20px;

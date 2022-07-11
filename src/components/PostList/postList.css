@@ -1,14 +1,48 @@
-.postList {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  box-sizing: content-box;
-  align-items: center;
+@media (max-width: 1920px) {
+  .card {
+    flex-basis: 20%;
+    margin-top: 20px;
+  }
+  .postList {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: content-box;
+    align-items: center;
+  }
 }
-.card {
-  flex-basis: 20%;
-  margin-top: 20px;
+
+@media (max-width: 768px) {
+  .card {
+    flex-basis: 30%;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .postList {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: content-box;
+    align-items: center;
+  }
 }
+@media (max-width: 320px) {
+  .card {
+    flex-basis: 100%;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .postList {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: content-box;
+    align-items: center;
+  }
+}
+
 .buttonSpiner {
   width: 100%;
   display: flex;

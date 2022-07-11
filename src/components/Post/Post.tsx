@@ -21,6 +21,7 @@ type PostsProps = {
 };
 export const Post = () => {
   const post = useAppSelector((state) => state.posts.onePost);
+
   const [search, setSearch] = useState(1);
   useEffect(() => {
     dispatch(getOnePost(String(id)));

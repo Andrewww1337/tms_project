@@ -1,25 +1,82 @@
-.post {
-  display: flex;
-  flex-direction: row;
-  text-align: left;
-  width: 100%;
+@media (max-width: 1920px) {
+  .posts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .contentPost {
+    width: 17%;
+  }
+  .postImage {
+    height: 35vh;
+    border-radius: 20px;
+    margin-bottom: 35px;
+  }
+  .postImage {
+    height: 35vh;
+    border-radius: 20px;
+    margin-bottom: 35px;
+  }
+  .post {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    width: 100%;
+  }
 }
-.posts {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+
+@media (max-width: 768px) {
+  .posts {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .contentPost {
+    width: 30%;
+  }
+  .postImage {
+    height: 35vh;
+    border-radius: 20px;
+    margin-bottom: 35px;
+  }
+  .card {
+    flex-basis: 30%;
+  }
+  .post {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    width: 100%;
+  }
 }
-.contentPost {
-  width: 17%;
+@media (max-width: 320px) {
+  .posts {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .contentPost {
+    width: 100%;
+  }
+  .postImage {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 35px;
+  }
+  .card {
+    flex-basis: 100%;
+  }
+  .post {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+  }
 }
+
 .postInfo {
   margin-left: 45px;
   width: 83%;
-}
-.postImage {
-  height: 35vh;
-  border-radius: 20px;
-  margin-bottom: 35px;
 }
 
 .titlePost {

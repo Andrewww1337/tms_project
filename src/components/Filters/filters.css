@@ -1,3 +1,38 @@
+@media (max-width: 1920px) {
+  .menu__content {
+    width: 25%;
+    height: 100%;
+    background-color: #242426;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu__content {
+    width: 50%;
+    height: 100%;
+    background-color: #242426;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s;
+  }
+}
+@media (max-width: 320px) {
+  .menu__content {
+    width: 100%;
+    height: 100%;
+    background-color: #242426;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s;
+  }
+}
+
 .menu {
   position: fixed;
   display: flex;
@@ -14,15 +49,7 @@
 .menu.active {
   transform: translateX(0);
 }
-.menu__content {
-  width: 25%;
-  height: 100%;
-  background-color: #242426;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: all 0.5s;
-}
+
 .menu_filters {
   display: flex;
   flex-direction: column;

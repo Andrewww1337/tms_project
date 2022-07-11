@@ -6,10 +6,22 @@
   margin-top: 45px;
   margin-bottom: 30px;
 }
-.searhCompanentInNavBar {
-  width: 81%;
+
+@media (max-width: 1920px) {
+  .userComponentInNavBar {
+    width: 13%;
+    margin-right: 3%;
+  }
+  .searhCompanentInNavBar {
+    width: 81%;
+  }
 }
-.userComponentInNavBar {
-  width: 13%;
-  margin-right: 3%;
+
+@media (max-width: 768px) {
+  .userComponentInNavBar {
+    display: none;
+  }
+  .searhCompanentInNavBar {
+    width: 100%;
+  }
 }

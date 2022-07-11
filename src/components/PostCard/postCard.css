@@ -1,9 +1,29 @@
-.postCard {
-  display: flex;
-  flex-direction: column;
-  width: 13vw;
-  position: relative;
+@media (max-width: 1920px) {
+  .postCard {
+    display: flex;
+    flex-direction: column;
+    width: 13vw;
+    position: relative;
+  }
 }
+
+@media (max-width: 768px) {
+  .postCard {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    position: relative;
+  }
+}
+@media (max-width: 320px) {
+  .postCard {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+  }
+}
+
 .cardImage {
   border-radius: 20px;
   height: 35vh;
